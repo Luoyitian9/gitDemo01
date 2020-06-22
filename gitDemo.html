@@ -7,19 +7,18 @@
     <title>Document</title>
     <script>
         /*
-                                游戏会有很多版本，不停更新迭代
+                                                                                                                                                                                                                            游戏会有很多版本，不停更新迭代
 
-                                版本控制工具
-                                    1、SNV
-                                    2、Git（今天）
+                                                                                                                                                                                                                            版本控制工具
+                                                                                                                                                                                                                                1、SNV
+                                                                                                                                                                                                                                2、Git（今天）
 
-                                        github  美国
-                                        gitee   国内代码托管平台
+                                                                                                                                                                                                                                    github  美国
+                                                                                                                                                                                                                                    gitee   国内代码托管平台
 
-                                    【注】操作都是一样。
+                                                                                                                                                                                                                                【注】操作都是一样。
 
-                                    
-                            */
+                                                                                                                                                                                                                                */
 
         /*
             完成代码托管的操作：
@@ -29,23 +28,31 @@
                     <2>git CMD   支持windows命令的控制台
                     <3>git GUI   git软件图形化界面（不建议用）
 
+                
+                 VsCode  安装git插件(自己百度)
+                        快捷键：ctrl + ~    打开终端
+
                 2、github(不要谷歌翻译)  gitee(支持中文) 都要去注册账号。
 
                 3、开始使用git命令操作版本控制工具（支持开源） 全球最大的开源社区。
                 
                     <1>cd 路径
                         进入文件夹 （如果盘符如果换不了的话，E: + enter 切换盘符）
+                        注：没有消息就是好消息。
                     <2>git init
                         初始化，当前项目。
                         多出一个.git的隐藏文件(设置隐藏文件可见)，存储着当前项目所有的版本信息
-                    <3>
-                        git add *
+                    <3>工作区 => 暂存区 (将数据从工作区提交到暂存区)
+                        git add 文件名
+                        git add *   (提交所有文件)
+                        
                         git commit -m "写这次提交的描述"
-                    将数据从工作区提交到暂存区
+                        
                     <4>git status
                         查看暂存区数据的状态
                     <5>git checkout 
                         可以将暂存区的数据，恢复到工作区
+                        （新版本中：checkout 被移除了， 被restore 和switch 代替了）
 
                     <6>在本地git软件上，配置一下git的账户（一个电脑只需要配置一次）
                         git config --global user.name "你的昵称"
@@ -61,15 +68,22 @@
                         git reset --hard HEAD^  回退到当前版本的上一个版本
                         git reset --hard HEAD^^ 回退到当前版本的上上个版本
                         git reset --hard 版本号(系统自己生成)
+                            版本号：(如commit 005b5d3ecce053df759fcb5902c806eff629cb4b )
 
-                    <10>ssh-keygen -t rsa -C "tian18840876830@gmail.com"
-                        配置密匙
-                        windows电脑通过  C盘 => 用户 => 你名字的用户 => .ssh隐藏文件夹
+                    <10>ssh-keygen -t rsa -C "你github邮箱"
+                        生成ssh密匙
+                        
+                      <11>  GitHub账户配置密匙
+                        先找到密匙：
+                        windows电脑通过  C盘 => 用户 => 你名字的用户 => .ssh隐藏文件夹 =>xxx.pub(存有密匙)
+                        然后图解：
 
-                    <11>git remote add origin git仓库的地址
-
-                    <12>git push -u origin master  将暂存区的文件推送到远程仓库
-                        【注】windows电脑会要求输入账号和密码（输入github账户的账号密码）
+                    <12> 缓存区 =>  远程仓库
+                            git remote add origin git仓库的地址
+                            git push -u origin master
+                            【注】windows电脑会要求输入账号和密码（输入github账户的账号密码）
+                        
+                    <13>clear   清屏操作
 
 
                     【注】以上是第一次配置git需要的操作。
