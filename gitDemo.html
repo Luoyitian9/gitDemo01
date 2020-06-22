@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+                                游戏会有很多版本，不停更新迭代
+
+                                版本控制工具
+                                    1、SNV
+                                    2、Git（今天）
+
+                                        github  美国
+                                        gitee   国内代码托管平台
+
+                                    【注】操作都是一样。
+
+                                    
+                            */
+
+        /*
+            完成代码托管的操作：
+                1、安装git
+                    开始键 => git文件夹 => git bash/git GUI/git CMD
+                    <1>git bash  支持linux命令的控制台（常用）
+                    <2>git CMD   支持windows命令的控制台
+                    <3>git GUI   git软件图形化界面（不建议用）
+
+                2、github(不要谷歌翻译)  gitee(支持中文) 都要去注册账号。
+
+                3、开始使用git命令操作版本控制工具（支持开源） 全球最大的开源社区。
+                
+                    <1>cd 路径
+                        进入文件夹 （如果盘符如果换不了的话，E: + enter 切换盘符）
+                    <2>git init
+                        初始化，当前项目。
+                        多出一个.git的隐藏文件(设置隐藏文件可见)，存储着当前项目所有的版本信息
+                    <3>
+                        git add *
+                        git commit -m "写这次提交的描述"
+                    将数据从工作区提交到暂存区
+                    <4>git status
+                        查看暂存区数据的状态
+                    <5>git checkout 
+                        可以将暂存区的数据，恢复到工作区
+
+                    <6>在本地git软件上，配置一下git的账户（一个电脑只需要配置一次）
+                        git config --global user.name "你的昵称"
+                        git config --global user.email "你登陆git的邮箱"
+
+                    <7>git diff
+                        可以查看工作区和暂存区代码的区别
+                    
+                    <8>git log
+                        可以查看版本日志，查看之前之前提交过的所有的历史版本
+                    
+                    <9>git reset
+                        git reset --hard HEAD^  回退到当前版本的上一个版本
+                        git reset --hard HEAD^^ 回退到当前版本的上上个版本
+                        git reset --hard 版本号(系统自己生成)
+
+                    <10>ssh-keygen -t rsa -C "tian18840876830@gmail.com"
+                        配置密匙
+                        windows电脑通过  C盘 => 用户 => 你名字的用户 => .ssh隐藏文件夹
+
+                    <11>git remote add origin git仓库的地址
+
+                    <12>git push -u origin master  将暂存区的文件推送到远程仓库
+                        【注】windows电脑会要求输入账号和密码（输入github账户的账号密码）
+
+
+                    【注】以上是第一次配置git需要的操作。
+
+
+                
+                    从第二次开始：
+                        <1> 工作区 => 暂存区
+                            git add *
+                            git commit -m ""
+                        <2> 检查暂存区的状态
+                            git status
+                        <3> 将暂存区的数据推送到远程仓库去
+                            git push
+                            
+                */
+
+        /*
+            换台电脑开发项目
+                <1>git clone git仓库地址
+                    从远程仓库，将代码拷贝到本地
+                
+                <2>git pull
+                    看更新后的数据，将当前项目更新到最新的版本
+
+        */
+
+        /*
+            【注】git非常重要的。
+            【注】大家每天每时每刻都要去用的工具
+            【注】整个开发项目的过程中，要求大家全程使用git。
+            【注】留一个小作业，新建一个空文件夹readme.md 上传。
+                搭建项目 => 周五，你搭建好的这个项目，上传git。
+
+            【注】以后每天的日常
+                    <1>写代码
+                    <2>git 命令 提交
+        */
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
